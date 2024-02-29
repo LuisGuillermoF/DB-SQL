@@ -32,8 +32,9 @@ id_tienda int,
 id_venta int auto_increment primary key not null,
 cantidad_venta int,
 fecha_venta date,
+
 constraint fk_tienda1 foreign key (id_tienda) references Tiendas (id_tienda),
 constraint fk_producto foreign key (id_producto) references Productos (id_producto)
 );
 
-drop table Productos;
+
